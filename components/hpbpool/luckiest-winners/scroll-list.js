@@ -8,8 +8,8 @@ const paddingHeight = (isMobile) => (isMobile ? 54 : 48);
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
-    height: 200,
     overflow: 'hidden',
+    height: ({ height }) => height,
   },
   container: {
     '& > div': {
@@ -34,16 +34,23 @@ const getFirstCountData = (data, count) => data.filter((item, idx) => count > id
 const getLastCountData = (data, count) => data.filter((item, idx) => count > data.length - idx);
 const getDefaultData = (data, count) => [...data, getFirstCountData(data, count)];
 
-function ScrollList({ data, isMobile }) {
+const getPrams = (data, isMobile) => {
   const showItems = isMobile ? 9 : 5;
+  const showAnimate = showItems < data.length;
+  const listItemHeight = 36 + paddingHeight(isMobile);
+  return { showItems, showAnimate, listItemHeight };
+};
+function ScrollList({ data, isMobile }) {
+  const { showItems, showAnimate, listItemHeight } = getPrams(data, isMobile);
   const [{ idx, hideTransition, listData }, setIdx] = useState({
     idx: 0,
     hideTransition: false,
     listData: [...data, getDefaultData(data, showItems)],
   });
-  const showAnimate = showItems < data.length;
-  const listItemHeight = 36 + paddingHeight(isMobile);
-  const classes = useStyles({ isMobile });
+  const classes = useStyles({
+    isMobile,
+    height: listItemHeight * showItems - paddingHeight(isMobile),
+  });
   useEffect(() => {
     let interval = () => {};
     if (showAnimate) {
@@ -69,12 +76,7 @@ function ScrollList({ data, isMobile }) {
     };
   }, [data, showAnimate, showItems]);
   return (
-    <div
-      className={classes.root}
-      style={{
-        height: listItemHeight * showItems - (isMobile ? 54 : 48),
-      }}
-    >
+    <div className={classes.root}>
       <div
         className={classes.container}
         style={{
