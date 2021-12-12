@@ -15,21 +15,15 @@ function PartnerLandingPage({ isMobile }) {
   // const classes = useStyles();
 
   return (
-    <div
-      style={{
-        minWidth: isMobile ? '100%' : 1200,
-        maxWidth: isMobile ? '100%' : 1440,
-        margin: '0 auto',
-      }}
-    >
+    <div style={{ backgroundColor: '#2f1957' }}>
       <Head>
-        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta content="width=device-width, initial-scale=0.5" name="viewport" />
       </Head>
-      <Header />
-      <Banner />
-      <HowItWorks />
-      <LuckiestWinners />
-      <Footer />
+      <Header isMobile={isMobile} />
+      <Banner isMobile={isMobile} />
+      <HowItWorks isMobile={isMobile} />
+      <LuckiestWinners isMobile={isMobile} />
+      <Footer isMobile={isMobile} />
     </div>
   );
 }

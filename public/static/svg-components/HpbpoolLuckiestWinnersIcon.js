@@ -19,7 +19,7 @@ const SvgHpbpoolLuckiestWinnersIcon = React.forwardRef((props, ref) => {
   return (
     <svg
       {...props}
-      width={46}
+      width={26}
       height={26}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -27,23 +27,15 @@ const SvgHpbpoolLuckiestWinnersIcon = React.forwardRef((props, ref) => {
       color={theme.colors[color] ?? color}
       ref={ref}
     >
-      <mask
-        id="hpbpool-luckiest-winners-icon_svg__a"
-        style={{
-          maskType: 'alpha',
-        }}
-        maskUnits="userSpaceOnUse"
-        x={0}
-        y={0}
-        width={46}
-        height={26}
-      >
-        <path fill="#C4C4C4" d="M.814.001h45.167v25.5H.814z" />
-      </mask>
-      <g mask="url(#hpbpool-luckiest-winners-icon_svg__a)">
-        <ellipse cx={23.397} cy={3.751} rx={21.078} ry={21} fill="#FFCA42" />
-        <path fill="#BE6058" d="M22.949-8.167l12.084 12.04-12.084 12.039-12.084-12.04z" />
-      </g>
+      <ellipse
+        cx={12.937}
+        cy={12.795}
+        rx={12.399}
+        ry={12.353}
+        transform="rotate(-180 12.937 12.795)"
+        fill="#FFCA42"
+      />
+      <path fill="#BE6058" d="M13.2 19.806l-7.107-7.082L13.2 5.642l7.108 7.082z" />
     </svg>
   );
 });

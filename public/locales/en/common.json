@@ -2,5 +2,13 @@
   "translation.en": "English",
   "translation.zh": "Chinese",
   "tutorial": "Tutorial",
-  "app": "App"
+  "app": "App",
+  "yellow_description": "no-loss prize games on the HPB blockchain",
+  "description": "HPB Pool is a protocol for <1> {{title}}</1>.The protocol:Enables developers to build their own no-loss prize games",
+  "how_it_work": "HOW IT WORKS",
+  "step_1": "Deposit money for a chance to win",
+  "step_2": "Prizes are awarded each week",
+  "step_3": "Even if you don't win, keep all of your money!",
+  "luckiest_winners": "LUCKIEST WINNERS",
+  "luckiest_winners_text": " won ${{winMoney}} with only ${{depositMoney}} deposited!"  
 }

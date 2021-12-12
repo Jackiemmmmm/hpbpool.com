@@ -1,47 +1,7 @@
-const brandAction = '#4557a1';
-const brandHover = '#374681';
-const brandIcon = '#5566aa';
-const brandMedium = '#8f9dd6';
-const brandBg = '#f4f5fb';
-const dark = '#333532';
-const grey66 = '#666666';
-const grey99 = '#999999';
-const greyCc = '#cccccc';
-const greyE8 = '#e3e8e8';
-const greyF7 = '#f5f7f7';
-const greyFa = '#f9fafa';
-const yellow = '#fece00';
-const yellowMedium = '#ffe266';
-const yellowBg = '#fff6cc';
-const yellowDark = '#f1be04';
-const red = '#d85145';
-const redMedium = '#f89d96';
-const redBg = '#fde4e2';
-const redDark = '#ca493f';
-const green = '#3ea769';
-const greenMedium = '#88d3a6';
-const greenDark = '#419061';
-const greenBg = '#e9f7ee';
-const violet = '#475e9f';
-const violetMedium = '#8e9fcc';
-const violetBg = '#eaedf6';
-const violetDark = '#495a88';
-const orange = '#fb8f23';
-const orangeBg = '#ffe6ce';
-const orangeMedium = '#fcc083';
-const orangeDark = '#f08519';
-const blue = '#0c8be6';
-const blueBg = '#e7f4fe';
-const blueMedium = '#62b9f7';
-const blueDark = '#147ec9';
-const rose = '#f22f70';
-const roseBg = '#fde2eb';
-const roseMedium = '#f99fbd';
-const roseDark = '#e72767';
+const yellow = '#ffda79';
 const transparent = 'transparent';
 const white = '#ffffff';
-
-const mainRootPadding = '16px 32px';
+const purple = '#251046';
 
 const flex = {
   fill: {
@@ -205,14 +165,17 @@ const flex = {
 
 const theme = {
   typography: {
-    fontFamily: '"Arimo", "Helvetica", "Arial", sans-serif',
-    h1: { fontSize: 28, lineHeight: '40px', fontWeight: 'normal', letterSpacing: 'normal' },
+    // hpb pool use styels
+    h1: { fontSize: 36, lineHeight: '56px', fontWeight: 'normal', letterSpacing: 'normal' },
+    h3: { fontSize: 24, lineHeight: '32px', fontWeight: 'bold', letterSpacing: 'normal' },
+    bodyLarge: { fontSize: 19, lineHeight: '32px', fontWeight: 'normal', letterSpacing: 'normal' },
+    body1: { fontSize: 14, lineHeight: '20px', letterSpacing: 'normal' },
+
+    fontFamily: '"Roboto" "Arimo", "Helvetica", "Arial", sans-serif',
     h2: { fontSize: 22, lineHeight: '40px', fontWeight: 'bold', letterSpacing: 'normal' },
-    h3: { fontSize: 18, lineHeight: '32px', letterSpacing: 'normal' },
     h4: { fontSize: 16, lineHeight: '28px', letterSpacing: 'normal' },
     h5: { fontSize: 14, lineHeight: '20px', fontWeight: 'bold', letterSpacing: 'normal' },
     h6: { fontSize: 12, lineHeight: '16px', fontWeight: 'bold', letterSpacing: 'normal' },
-    body1: { fontSize: 14, lineHeight: '24px', letterSpacing: 'normal' },
     body2: { fontSize: 12, lineHeight: '20px', letterSpacing: 'normal' },
     button: {
       fontSize: 14,
@@ -225,66 +188,26 @@ const theme = {
     dropdown: { fontSize: 14, lineHeight: '20px' },
   },
 
-  mainRootPadding,
-
   colors: {
-    brandAction,
-    brandHover,
-    brandIcon,
-    brandMedium,
-    brandBg,
-    dark,
-    grey66,
-    grey99,
-    greyCc,
-    greyE8,
-    greyF7,
-    greyFa,
     yellow,
-    yellowMedium,
-    yellowBg,
-    yellowDark,
-    red,
-    redMedium,
-    redBg,
-    redDark,
-    green,
-    greenMedium,
-    greenBg,
-    greenDark,
-    violet,
-    violetMedium,
-    violetBg,
-    violetDark,
-    orange,
-    orangeMedium,
-    orangeBg,
-    orangeDark,
-    blue,
-    blueBg,
-    blueMedium,
-    blueDark,
-    rose,
-    roseBg,
-    roseMedium,
-    roseDark,
     transparent,
     white,
+    purple,
   },
 
   borderRadius: {
-    small: 4,
-    big: 8,
-    huge: 10,
-    full: 9999,
+    // small: 4,
+    // big: 8,
+    // huge: 10,
+    // full: 9999,
   },
 
   shadow: {
-    main: '0 2px 16px 0 rgba(51, 53, 50, 0.08)',
-    modal: '0 4px 16px 0 rgba(51, 53, 50, 0.24)',
-    componentDark: '0 2px 8px 0 rgba(51, 53, 50, 0.16)',
-    componentShallow: '0 2px 8px 0 rgba(51, 53, 50, 0.08)',
-    brandActionShallow: '0 0 4px 0 rgba(69, 87, 161, 0.64)',
+    // main: '0 2px 16px 0 rgba(51, 53, 50, 0.08)',
+    // modal: '0 4px 16px 0 rgba(51, 53, 50, 0.24)',
+    // componentDark: '0 2px 8px 0 rgba(51, 53, 50, 0.16)',
+    // componentShallow: '0 2px 8px 0 rgba(51, 53, 50, 0.08)',
+    // brandActionShallow: '0 0 4px 0 rgba(69, 87, 161, 0.64)',
   },
 
   flex,
