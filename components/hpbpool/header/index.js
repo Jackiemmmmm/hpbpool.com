@@ -48,7 +48,11 @@ function Header({ isMobile }) {
         text={t('tutorial')}
         onClick={() => handleClick('https://www.hpclub.org/t/no-loss-prize-games-hpbpool/93')}
       />
-      <StyledButton isMobile={isMobile} text={t('app')} onClick={() => {}} />
+      <StyledButton
+        isMobile={isMobile}
+        text={t('app')}
+        onClick={() => handleClick('https://hpbpool.com/')}
+      />
     </div>
   );
 }

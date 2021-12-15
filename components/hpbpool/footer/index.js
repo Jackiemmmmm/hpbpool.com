@@ -73,16 +73,16 @@ function Footer({ isMobile }) {
   return (
     <footer className={classes.footer}>
       <div className={classes.link}>
-        <a href="https://www.google.com" target="_blank" rel="noreferrer">
+        <a href="https://www.hpb.io/" target="_blank" rel="noreferrer">
           <SvgHpbpoolIconHome />
         </a>
-        <a href="https://www.google.com" target="_blank" rel="noreferrer">
+        <a href="https://medium.com/hpb-foundation" target="_blank" rel="noreferrer">
           <SvgHpbpoolIconExclude />
         </a>
         <a href="https://discord.gg/MxHE9HGm" target="_blank" rel="noreferrer">
           <SvgHpbpoolIconDiscord />
         </a>
-        <a href="https://www.google.com" target="_blank" rel="noreferrer">
+        <a href="https://t.me/hpbglobal" target="_blank" rel="noreferrer">
           <SvgHpbpoolIconTelegram />
         </a>
         <a href="https://twitter.com/HPB_Global" target="_blank" rel="noreferrer">
