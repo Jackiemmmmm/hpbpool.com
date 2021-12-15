@@ -40,9 +40,14 @@ const useStyles = makeStyles((theme) => ({
 function Header({ isMobile }) {
   const { t } = useTranslation('common');
   const classes = useStyles({ isMobile });
+  const handleClick = (value) => window.open(value, '_blank');
   return (
     <div className={classes.root}>
-      <StyledButton isMobile={isMobile} text={t('tutorial')} onClick={() => {}} />
+      <StyledButton
+        isMobile={isMobile}
+        text={t('tutorial')}
+        onClick={() => handleClick('https://www.hpclub.org/t/no-loss-prize-games-hpbpool/93')}
+      />
       <StyledButton isMobile={isMobile} text={t('app')} onClick={() => {}} />
     </div>
   );

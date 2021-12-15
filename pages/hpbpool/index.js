@@ -8,7 +8,7 @@ import Banner from '~components/hpbpool/banner';
 import Footer from '~components/hpbpool/footer';
 import Header from '~components/hpbpool/header';
 import HowItWorks from '~components/hpbpool/how-it-works';
-import LuckiestWinners from '~components/hpbpool/luckiest-winners';
+// import LuckiestWinners from '~components/hpbpool/luckiest-winners';
 
 // const useStyles = makeStyles((theme) => ({}));
 
@@ -27,7 +27,7 @@ function PartnerLandingPage() {
       <Header isMobile={isMobile} />
       <Banner isMobile={isMobile} />
       <HowItWorks isMobile={isMobile} />
-      <LuckiestWinners isMobile={isMobile} />
+      {/* <LuckiestWinners isMobile={isMobile} /> */}
       <Footer isMobile={isMobile} />
     </div>
   );

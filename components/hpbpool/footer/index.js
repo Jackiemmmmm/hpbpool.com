@@ -79,16 +79,16 @@ function Footer({ isMobile }) {
         <a href="https://www.google.com" target="_blank" rel="noreferrer">
           <SvgHpbpoolIconExclude />
         </a>
-        <a href="https://www.google.com" target="_blank" rel="noreferrer">
+        <a href="https://discord.gg/MxHE9HGm" target="_blank" rel="noreferrer">
           <SvgHpbpoolIconDiscord />
         </a>
         <a href="https://www.google.com" target="_blank" rel="noreferrer">
           <SvgHpbpoolIconTelegram />
         </a>
-        <a href="https://www.google.com" target="_blank" rel="noreferrer">
+        <a href="https://twitter.com/HPB_Global" target="_blank" rel="noreferrer">
           <SvgHpbpoolIconTwitter />
         </a>
-        <a href="https://www.google.com" target="_blank" rel="noreferrer">
+        <a href="https://github.com/hpb-project" target="_blank" rel="noreferrer">
           <SvgHpbpoolIconGithub />
         </a>
       </div>
