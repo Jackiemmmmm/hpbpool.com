@@ -58,13 +58,20 @@ function Header({ isMobile }) {
   const classes = useStyles({ isMobile });
   const router = useRouter();
   const handleClick = (value) => window.open(value, '_blank');
+  const isZh = router.locale === 'zh';
   return (
     <div className={classes.root}>
       <div className={classes.operation}>
         <StyledButton
           isMobile={isMobile}
           text={t('tutorial')}
-          onClick={() => handleClick('https://www.hpclub.org/t/no-loss-lottery-comes-to-hpb/97')}
+          onClick={() =>
+            handleClick(
+              isZh
+                ? 'https://www.hpclub.org/t/no-loss-prize-games-hpbpool/93'
+                : 'https://www.hpclub.org/t/no-loss-lottery-comes-to-hpb/97'
+            )
+          }
         />
         <StyledButton
           isMobile={isMobile}
