@@ -3,12 +3,12 @@
   "translation.zh": "中文",
   "tutorial": "教程",
   "app": "App",
-  "yellow_description": "HPB区块链上的无输赢中奖游戏",
-  "description": "HPB Pool是一个协议，用于 <1> {{title}}</1>.协议：使开发者能够建立他们自己的无损失中奖游戏",
-  "how_it_work": "它是如何工作的",
-  "step_1": "存钱就有机会中奖",
-  "step_2": "每周都有奖品颁发",
-  "step_3": "即使你没有中奖，也可以保留你所有的钱!",
-  "luckiest_winners": "最幸运的获奖者",
-  "luckiest_winners_text": " 仅用 ${{depositMoney}} 的存款就赢得了 ${{winMoney}}!"
+  "yellow_description": "HPB链上的一个无损彩票",
+  "description": "Hpbpool 是<1> {{title}}</1>协议，基于该协议，开发者可以构建更加丰富的无损抽奖游戏。 ",
+  "how_it_work": "抽奖机制？",
+  "step_1": "存入资金，坐等抽奖分红。",
+  "step_2": "每周都会颁发奖金",
+  "step_3": "保本抽奖，即使你没有中奖，依然不会损失本金。",
+  "luckiest_winners": "最幸运的赢家",
+  "luckiest_winners_text": " 仅用 {{depositMoney}}美元的存款就赢得了 {{winMoney}}美元!"
 }

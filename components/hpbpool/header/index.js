@@ -46,7 +46,7 @@ function Header({ isMobile }) {
       <StyledButton
         isMobile={isMobile}
         text={t('tutorial')}
-        onClick={() => handleClick('https://www.hpclub.org/t/no-loss-prize-games-hpbpool/93')}
+        onClick={() => handleClick('https://www.hpclub.org/t/no-loss-lottery-comes-to-hpb/97')}
       />
       <StyledButton
         isMobile={isMobile}
