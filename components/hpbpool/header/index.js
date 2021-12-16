@@ -69,7 +69,7 @@ function Header({ isMobile }) {
         <StyledButton
           isMobile={isMobile}
           text={t('app')}
-          onClick={() => handleClick('https://hpbpool.com/')}
+          onClick={() => handleClick('https://app.hpbpool.com')}
         />
       </div>
       <div className={classes.locales}>
