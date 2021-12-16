@@ -1,4 +1,6 @@
 import { makeStyles, styled } from '@material-ui/styles';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -31,8 +33,22 @@ const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 1200,
     margin: '0 auto',
-    padding: ({ isMobile }) => (isMobile ? '16px 32px 0' : '16px 5px 0'),
-    ...theme.flex.mainEnd,
+    padding: ({ isMobile }) => (isMobile ? '50px 50px 0' : '16px 0px 0'),
+    display: 'flex',
+    justifyContent: ({ isMobile }) => (isMobile ? 'space-between' : 'flex-end'),
+  },
+  locales: {
+    color: theme.colors.white,
+    ...theme.flex.center,
+    fontSize: ({ isMobile }) => (isMobile ? 28 : 14),
+    marginLeft: 39,
+    '& * + *': {
+      paddingLeft: ({ isMobile }) => (isMobile ? 16 : 4),
+      marginLeft: ({ isMobile }) => (isMobile ? 16 : 4),
+      borderLeft: `1px solid ${theme.colors.white}`,
+    },
+  },
+  operation: {
     '& * + *': { marginLeft: ({ isMobile }) => (isMobile ? 20 : 24) },
   },
 }));
@@ -40,19 +56,29 @@ const useStyles = makeStyles((theme) => ({
 function Header({ isMobile }) {
   const { t } = useTranslation('common');
   const classes = useStyles({ isMobile });
+  const router = useRouter();
   const handleClick = (value) => window.open(value, '_blank');
   return (
     <div className={classes.root}>
-      <StyledButton
-        isMobile={isMobile}
-        text={t('tutorial')}
-        onClick={() => handleClick('https://www.hpclub.org/t/no-loss-lottery-comes-to-hpb/97')}
-      />
-      <StyledButton
-        isMobile={isMobile}
-        text={t('app')}
-        onClick={() => handleClick('https://hpbpool.com/')}
-      />
+      <div className={classes.operation}>
+        <StyledButton
+          isMobile={isMobile}
+          text={t('tutorial')}
+          onClick={() => handleClick('https://www.hpclub.org/t/no-loss-lottery-comes-to-hpb/97')}
+        />
+        <StyledButton
+          isMobile={isMobile}
+          text={t('app')}
+          onClick={() => handleClick('https://hpbpool.com/')}
+        />
+      </div>
+      <div className={classes.locales}>
+        {router.locales.map((item) => (
+          <Link href={router.route} key={item} locale={item}>
+            {t(`translation.${item}`)}
+          </Link>
+        ))}
+      </div>
     </div>
   );
 }
