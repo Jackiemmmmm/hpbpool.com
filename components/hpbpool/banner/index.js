@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     paddingTop: ({ isMobile }) => (isMobile ? 200 : 140),
     paddingBottom: ({ isMobile }) => (isMobile ? 200 : 120),
-    maxWidth: ({ isMobile }) => (isMobile ? 685 : 1200),
+    maxWidth: ({ isMobile }) => (isMobile ? 585 : 970),
     margin: '0 auto',
     flexDirection: 'column',
     ...theme.flex.center,
@@ -25,10 +25,6 @@ const useStyles = makeStyles((theme) => ({
     margin: 0,
     color: theme.colors.white,
     fontWeight: 400,
-    '& span': {
-      fontWeight: 700,
-      color: theme.colors.yellow,
-    },
   },
 }));
 
@@ -42,13 +38,7 @@ function Banner({ isMobile }) {
         src={`${publicRuntimeConfig.PUBLIC_FILE_PATH_PREFIX}/images/hpb_pool_logo.png`}
         placeholder={`${publicRuntimeConfig.PUBLIC_FILE_PATH_PREFIX}/images/hpb_pool_logo.png`}
       />
-      <h1 className={classes.h1}>
-        <Trans i18nKey="description">
-          HPB Pool is a protocol for&nbsp;
-          <span>{{ title: t('yellow_description') }}</span>
-          .The protocol:Enables developers to build their own no-loss prize games
-        </Trans>
-      </h1>
+      <h1 className={classes.h1}>{t('description')}</h1>
     </div>
   );
 }
