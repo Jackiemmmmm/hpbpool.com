@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/styles';
 import getConfig from 'next/config';
-import { Trans, useTranslation } from 'next-i18next';
+import { useTranslation } from 'next-i18next';
 import PropTypes from 'prop-types';
 import React from 'react';
 import DynamicImage from '~components/image';
